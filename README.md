@@ -1,3 +1,5 @@
+# ScholORs
+
 # Logo
 
 # Introduction
