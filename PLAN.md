@@ -1,41 +1,40 @@
 # Lab Website Construction Plan
 
-## 1. Project Overview
-- **Goal**: Create a single-page lab website hosted on GitHub Pages.
-- **Tech Stack**: HTML5, CSS3, Vanilla JavaScript (No frameworks).
-- **Theme**: Clean, academic, responsive.
+## Current Status: Phase 1 (Basic Framework)
+- [x] Initial directory structure.
+- [x] Basic HTML skeleton with Navigation.
+- [x] Smooth scrolling to anchor points.
+- [ ] Manual content population.
 
-## 2. Architecture & Files
-- `index.html`: The main structure.
-- `css/style.css`: All styling (Flexbox/Grid).
-- `js/script.js`: Navigation logic and dynamic content loading.
-- `assets/`: Images (logos, team photos).
+## Phase 1: Basic Skeleton (Current)
+- `index.html`: Setup `<nav>` with `#team`, `#publications`, `#projects`, `#news`, `#contact`.
+- `css/style.css`: 
+  - Basic reset and typography.
+  - Sticky navbar.
+  - Smooth scroll behavior.
+  - Section placeholders with distinctive heights/paddings.
 
-## 3. Detailed Implementation Steps
+## Phase 2: Content Population (Next)
+- **Team**: Manually add member names and research interests.
+- **Publications**: List papers manually in a clean `<ul>` or `<ol>` format.
+- **Contact**: Paste the iframe code from Microsoft Forms.
 
-### Phase 1: Skeleton & Navigation
-- Create a sticky navigation bar with smooth scrolling to anchors (`#team`, `#publications`, `#projects`, `#news`, `#contact`).
-- Design a Hero section (Lab Title, Subtitle, Background).
+## Phase 3: Advanced Integrations (Future/Advanced)
+- **Responsive Navigation (Hamburger Menu)**: 
+  - Implement a mobile-friendly navigation bar that collapses into a "hamburger" icon on smaller screens (max-width: 768px).
+  - Use CSS `position: fixed` and `transition` for a smooth slide-out drawer effect.
+  - Requires JavaScript to toggle an `.active` class on the menu container.
+- **GitHub API**: Write JavaScript to fetch and display repositories automatically.
+- **ResearchGate Integration**: Design a custom "View on ResearchGate" button and link.
+- **LinkedIn Integration**: Embed LinkedIn "News" snippets or a profile badge.
+- **Advanced Styling**:
+  - **Typography**: Use `rem` for spacing (`letter-spacing`, `line-height`) to ensure readability and scalability.
+  - **Interactions**: Add hover effects to navigation links (e.g., `border-bottom` transition) for better UX.
 
-### Phase 2: Team Section
-- Layout: Grid system.
-- Content: Member cards (Photo, Name, Role, Short Bio).
-
-### Phase 3: "Embed" Strategies (Technical Reality Check)
-- **Publications (ResearchGate)**: 
-  - *Constraint*: RG does not allow direct iframe embedding of paper lists due to security headers.
-  - *Solution*: Create a stylish "Selected Publications" list manually in HTML, plus a prominent "View on ResearchGate" button.
-- **Projects (GitHub)**:
-  - *Solution*: Use Vanilla JS to fetch from `https://api.github.com/users/{username}/repos` to dynamically generate project cards, or fallback to manual cards if the API limit is a concern.
-- **News (LinkedIn)**:
-  - *Constraint*: LinkedIn embeds are restrictive for personal profiles.
-  - *Solution*: "Latest News" timeline (manually updated HTML) + "Connect on LinkedIn" badge.
-
-### Phase 4: Contact
-- **Method**: Embed Microsoft Forms via `<iframe>`.
-- **Styling**: Ensure the iframe is responsive (width: 100%).
-
-### Phase 5: Polish & Deploy
-- Add simple animations (hover effects).
-- Ensure mobile responsiveness (media queries).
-- Push to GitHub and enable Pages.
+## Technical Notes for Reference
+- **Anchor Navigation**: Use `<section id="xxx">` and `<a href="#xxx">`.
+- **Sticky Header Fix**: Use `scroll-margin-top` in CSS to prevent the fixed header from covering section titles.
+- **Navigation Styling**:
+  - Use Flexbox (`align-items: center`, `gap`) for vertical alignment of Logo and Text.
+  - Hover effect: `border-bottom: 2px solid #color` with `transition` is preferred over simple `text-decoration: underline`.
+- **Deployment**: GitHub Pages looks for `index.html` in the root directory.
