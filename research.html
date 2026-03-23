@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — ScholORs Lab</title>
+  <meta name="description" content="Explore ScholORs research areas: combinatorial optimization, machine learning for OR, supply chain analytics, and scheduling.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/ScholORs_Logo_Inverted.png" type="image/png">
+</head>
+<body>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-label reveal" style="color: var(--accent-light);">Our Work</span>
+      <h1 class="reveal reveal-delay-1">Research</h1>
+      <p class="reveal reveal-delay-2">From theory to practice — discover how we advance operations research.</p>
+    </div>
+  </section>
+
+  <!-- RESEARCH AREAS -->
+  <section class="research-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Focus Areas</span>
+        <h2 class="section-title reveal">Core Research Directions</h2>
+      </div>
+
+      <div class="research-area reveal">
+        <div class="research-area-text">
+          <h3>Combinatorial Optimization</h3>
+          <p>We develop exact algorithms, metaheuristics, and matheuristics for large-scale combinatorial problems. Our work addresses classic challenges such as the Traveling Salesman Problem, Vehicle Routing, and Graph Coloring, while extending these frameworks to novel industrial applications.</p>
+          <p>Our approach combines integer programming, constraint programming, and hybrid methods to push the boundaries of solvable problem sizes.</p>
+          <a href="#" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">Related Publications →</a>
+        </div>
+        <div class="research-area-image">
+          <img src="images/ScholORs_Banner.png" alt="Optimization">
+        </div>
+      </div>
+
+      <div class="research-area reveal">
+        <div class="research-area-text">
+          <h3>Machine Learning for OR</h3>
+          <p>We leverage deep reinforcement learning, graph neural networks, and attention-based architectures to learn optimization policies, predict branching decisions, and accelerate mathematical programming solvers.</p>
+          <p>Our goal is to create self-improving optimization systems that generalize across problem instances and domains.</p>
+          <a href="#" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">Related Publications →</a>
+        </div>
+        <div class="research-area-image">
+          <img src="images/ScholORs_Banner.png" alt="ML for OR">
+        </div>
+      </div>
+
+      <div class="research-area reveal">
+        <div class="research-area-text">
+          <h3>Supply Chain Analytics</h3>
+          <p>We model complex, multi-echelon supply networks under uncertainty, incorporating sustainability metrics, disruption resilience, and demand variability into our optimization frameworks.</p>
+          <p>Our solutions help organizations design robust, efficient, and environmentally conscious supply chains.</p>
+          <a href="#" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">Related Publications →</a>
+        </div>
+        <div class="research-area-image">
+          <img src="images/ScholORs_Banner.png" alt="Supply Chain">
+        </div>
+      </div>
+
+      <div class="research-area reveal">
+        <div class="research-area-text">
+          <h3>Scheduling & Routing</h3>
+          <p>From job-shop scheduling to multi-depot vehicle routing with time windows, we develop scalable, high-performance algorithms that meet the demands of real-world logistics and manufacturing systems.</p>
+          <p>We focus on dynamic, data-driven approaches that adapt to changing conditions in real-time.</p>
+          <a href="#" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">Related Publications →</a>
+        </div>
+        <div class="research-area-image">
+          <img src="images/ScholORs_Banner.png" alt="Scheduling">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Open Source</span>
+        <h2 class="section-title reveal">Projects & Code</h2>
+        <p class="section-desc reveal">We believe in open science. Explore our public repositories.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-header">
+            <span class="project-icon">📦</span>
+            <a href="https://github.com/ScholORs" target="_blank" rel="noopener" title="GitHub">⬡</a>
+          </div>
+          <h3>OR-Benchmark Suite</h3>
+          <p>A comprehensive benchmarking framework for evaluating optimization algorithms across standard problem instances.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Optimization</span>
+            <span class="project-tag">Benchmarking</span>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-card-header">
+            <span class="project-icon">🧬</span>
+            <a href="https://github.com/ScholORs" target="_blank" rel="noopener" title="GitHub">⬡</a>
+          </div>
+          <h3>MetaOpt Toolkit</h3>
+          <p>A modular framework for designing and testing metaheuristic algorithms with plug-and-play components.</p>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">Metaheuristics</span>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-card-header">
+            <span class="project-icon">🚛</span>
+            <a href="https://github.com/ScholORs" target="_blank" rel="noopener" title="GitHub">⬡</a>
+          </div>
+          <h3>VRP Solver</h3>
+          <p>High-performance vehicle routing problem solver supporting multiple variants and real-world constraints.</p>
+          <div class="project-tags">
+            <span class="project-tag">C++</span>
+            <span class="project-tag">Routing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/components.js"></script>
+  <script src="js/animations.js"></script>
+  <script>renderLoader(); renderNavbar('research'); renderFooter(); renderBackToTop();</script>
+</body>
+</html>

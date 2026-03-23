@@ -1,49 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScholORs</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScholORs — Operations Research Scholars & Professionals</title>
+  <meta name="description" content="ScholORs Lab: Advancing optimization, decision science, and operations research through cutting-edge research and collaboration.">
+  <meta property="og:title" content="ScholORs — Operations Research Lab">
+  <meta property="og:description" content="Advancing optimization, decision science, and operations research through cutting-edge research.">
+  <meta property="og:image" content="images/ScholORs_Banner.png">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/ScholORs_Logo_Inverted.png" type="image/png">
 </head>
 <body>
-    <div class="navigation">
-        <img class="logo"
-             src="./images/ScholORs_Logo_Inverted.png">
-        <div class="navi-links">
-            <a href="#intro">Introduction</a>
-            <a href="#member">Member</a>
-            <a href="#publication">Publication</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
-        </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="dot"></span>
+        Operations Research Lab
+      </div>
+      <h1 class="reveal reveal-delay-1">
+        Shaping the Future of <span class="highlight">Optimization</span>
+      </h1>
+      <p class="hero-subtitle reveal reveal-delay-2">
+        We are ScholORs — a team of researchers and professionals dedicated to advancing
+        combinatorial optimization, decision science, and analytical methodologies
+        that solve real-world challenges.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="research.html" class="btn btn-primary">Explore Research →</a>
+        <a href="team.html" class="btn btn-outline">Meet the Team</a>
+      </div>
     </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <section id="intro">
-        <img class="banner"
-              src="./images/ScholORs_Banner.png">
-        <h2>Introduction</h2>
-        <!-- Introduction -->
-    </section>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-label reveal">About Us</span>
+          <h2 class="section-title reveal reveal-delay-1">Pioneering Operations Research for a Smarter World</h2>
+          <p class="section-desc reveal reveal-delay-2">
+            ScholORs Lab is committed to pushing the boundaries of operations research.
+            Our interdisciplinary team combines mathematical rigor with computational innovation
+            to develop algorithms and models that tackle complex optimization problems
+            across industry, logistics, healthcare, and beyond.
+          </p>
+          <p class="section-desc reveal reveal-delay-2" style="margin-top: 1rem;">
+            Founded on the belief that data-driven decision-making can transform organizations,
+            we bridge the gap between academic theory and practical application.
+          </p>
+          <div class="about-features reveal reveal-delay-3">
+            <div class="about-feature">
+              <div class="icon">🎯</div>
+              <div><h4>Optimization</h4><p>Exact & heuristic methods</p></div>
+            </div>
+            <div class="about-feature">
+              <div class="icon">🤖</div>
+              <div><h4>AI + OR</h4><p>ML-augmented algorithms</p></div>
+            </div>
+            <div class="about-feature">
+              <div class="icon">📊</div>
+              <div><h4>Analytics</h4><p>Data-driven insights</p></div>
+            </div>
+            <div class="about-feature">
+              <div class="icon">🌐</div>
+              <div><h4>Impact</h4><p>Real-world applications</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image reveal-right">
+          <img src="images/ScholORs_Banner.png" alt="ScholORs Lab">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="member">
-        <h2>Member</h2>
-        <!-- Member -->
-    </section>
+  <!-- RESEARCH HIGHLIGHTS -->
+  <section class="research-highlights" id="research">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">What We Do</span>
+        <h2 class="section-title reveal reveal-delay-1">Research Areas</h2>
+        <p class="section-desc reveal reveal-delay-2">
+          Our work spans the full spectrum of operations research, from foundational theory to applied innovation.
+        </p>
+      </div>
+      <div class="research-grid">
+        <div class="research-card reveal reveal-delay-1">
+          <div class="card-icon" style="color: #fff;">📐</div>
+          <h3>Combinatorial Optimization</h3>
+          <p>Developing exact and metaheuristic algorithms for NP-hard problems including scheduling, routing, and network design.</p>
+          <a href="research.html" class="card-link">Learn more →</a>
+        </div>
+        <div class="research-card reveal reveal-delay-2">
+          <div class="card-icon" style="color: #fff;">🧠</div>
+          <h3>Machine Learning for OR</h3>
+          <p>Integrating deep learning and reinforcement learning with classical optimization to accelerate solver performance.</p>
+          <a href="research.html" class="card-link">Learn more →</a>
+        </div>
+        <div class="research-card reveal reveal-delay-3">
+          <div class="card-icon" style="color: #fff;">🔗</div>
+          <h3>Supply Chain Analytics</h3>
+          <p>Modeling and optimizing end-to-end supply chain networks with uncertainty, resilience, and sustainability in mind.</p>
+          <a href="research.html" class="card-link">Learn more →</a>
+        </div>
+        <div class="research-card reveal reveal-delay-4">
+          <div class="card-icon" style="color: #fff;">📅</div>
+          <h3>Scheduling & Routing</h3>
+          <p>Cutting-edge solutions for vehicle routing, job-shop scheduling, and resource allocation at industrial scale.</p>
+          <a href="research.html" class="card-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="publication">
-        <h2>Publication</h2>
-        <!-- Publication -->
-    </section>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="stat-number" data-count="15" data-suffix="+">0</div>
+          <div class="stat-label">Researchers</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-number" data-count="50" data-suffix="+">0</div>
+          <div class="stat-label">Publications</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-number" data-count="10" data-suffix="+">0</div>
+          <div class="stat-label">Active Projects</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-4">
+          <div class="stat-number" data-count="8" data-suffix="+">0</div>
+          <div class="stat-label">Industry Partners</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="project">
-        <h2>Project</h2>
-        <!-- Project -->
-    </section>
+  <!-- NEWS -->
+  <section class="news" id="news">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Stay Updated</span>
+        <h2 class="section-title reveal reveal-delay-1">Latest News</h2>
+      </div>
+      <div class="news-grid">
+        <div class="news-card reveal reveal-delay-1">
+          <div class="news-card-image">
+            <img src="images/ScholORs_Banner.png" alt="Conference">
+          </div>
+          <div class="news-card-body">
+            <div class="news-card-date">March 2026</div>
+            <h3>Paper Accepted at INFORMS 2026</h3>
+            <p>Our latest work on reinforcement learning for vehicle routing has been accepted for presentation.</p>
+          </div>
+        </div>
+        <div class="news-card reveal reveal-delay-2">
+          <div class="news-card-image">
+            <img src="images/ScholORs_Banner.png" alt="Workshop">
+          </div>
+          <div class="news-card-body">
+            <div class="news-card-date">February 2026</div>
+            <h3>New Lab Members Join ScholORs</h3>
+            <p>We welcome three new PhD students and two research associates to our growing team.</p>
+          </div>
+        </div>
+        <div class="news-card reveal reveal-delay-3">
+          <div class="news-card-image">
+            <img src="images/ScholORs_Banner.png" alt="Grant">
+          </div>
+          <div class="news-card-body">
+            <div class="news-card-date">January 2026</div>
+            <h3>Research Grant Awarded</h3>
+            <p>ScholORs receives funding for a 3-year project on sustainable logistics optimization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <!-- Contact -->
-    </section>
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-content">
+      <h2 class="reveal">Interested in Collaborating?</h2>
+      <p class="reveal reveal-delay-1">
+        Whether you are a prospective student, researcher, or industry partner,
+        we'd love to hear from you.
+      </p>
+      <div class="reveal reveal-delay-2">
+        <a href="contact.html" class="btn btn-primary">Get in Touch →</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/components.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/animations.js"></script>
+  <script>renderLoader(); renderNavbar('home'); renderFooter(); renderBackToTop();</script>
 </body>
 </html>

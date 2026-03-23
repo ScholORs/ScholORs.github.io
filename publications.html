@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — ScholORs Lab</title>
+  <meta name="description" content="Browse publications from ScholORs Lab in operations research, optimization, and applied analytics.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/ScholORs_Logo_Inverted.png" type="image/png">
+</head>
+<body>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="section-label reveal" style="color: var(--accent-light);">Our Contributions</span>
+      <h1 class="reveal reveal-delay-1">Publications</h1>
+      <p class="reveal reveal-delay-2">A selection of our peer-reviewed research work.</p>
+    </div>
+  </section>
+
+  <section class="publications-section">
+    <div class="container">
+
+      <div class="pub-controls reveal">
+        <button class="pub-filter-btn active" data-filter="all">All</button>
+        <button class="pub-filter-btn" data-filter="2026">2026</button>
+        <button class="pub-filter-btn" data-filter="2025">2025</button>
+        <button class="pub-filter-btn" data-filter="2024">2024</button>
+      </div>
+
+      <!-- 2026 -->
+      <div class="pub-year-group reveal" data-year="2026">
+        <div class="pub-year-label">2026</div>
+
+        <div class="pub-item">
+          <h3>Deep Reinforcement Learning for Dynamic Vehicle Routing with Stochastic Demands</h3>
+          <div class="pub-authors">A. Author, B. Author, C. Author</div>
+          <div class="pub-venue">Operations Research, 2026</div>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+            <a href="#">Code</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <h3>A Hybrid Metaheuristic for Large-Scale Job-Shop Scheduling</h3>
+          <div class="pub-authors">D. Author, E. Author</div>
+          <div class="pub-venue">European Journal of Operational Research, 2026</div>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2025 -->
+      <div class="pub-year-group reveal" data-year="2025">
+        <div class="pub-year-label">2025</div>
+
+        <div class="pub-item">
+          <h3>Graph Neural Networks for Combinatorial Optimization: A Survey</h3>
+          <div class="pub-authors">F. Author, G. Author, H. Author</div>
+          <div class="pub-venue">INFORMS Journal on Computing, 2025</div>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <h3>Resilient Supply Chain Network Design Under Disruption Uncertainty</h3>
+          <div class="pub-authors">I. Author, J. Author</div>
+          <div class="pub-venue">Transportation Science, 2025</div>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <h3>Adaptive Large Neighborhood Search for Multi-Depot Pickup and Delivery</h3>
+          <div class="pub-authors">K. Author, L. Author, M. Author</div>
+          <div class="pub-venue">Computers & Operations Research, 2025</div>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="pub-year-group reveal" data-year="2024">
+        <div class="pub-year-label">2024</div>
+
+        <div class="pub-item">
+          <h3>Branch-and-Price for the Capacitated Vehicle Routing Problem with Time Windows</h3>
+          <div class="pub-authors">N. Author, O. Author</div>
+          <div class="pub-venue">Mathematical Programming, 2024</div>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <h3>Sustainability Metrics in Multi-Objective Supply Chain Optimization</h3>
+          <div class="pub-authors">P. Author, Q. Author, R. Author</div>
+          <div class="pub-venue">Omega, 2024</div>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/components.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    renderLoader();
+    renderNavbar('publications');
+    renderFooter();
+    renderBackToTop();
+
+    // Year filter logic
+    document.querySelectorAll('.pub-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.pub-year-group').forEach(g => {
+          g.style.display = (filter === 'all' || g.dataset.year === filter) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
